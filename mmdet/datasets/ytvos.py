@@ -3,6 +3,7 @@ import os.path as osp
 import random
 import mmcv
 from .custom import CustomDataset
+from .extra_aug import ExtraAugmentation
 from .transforms import (ImageTransform, BboxTransform, MaskTransform,
                          Numpy2Tensor)
 from pycocotools.ytvos import YTVOS
