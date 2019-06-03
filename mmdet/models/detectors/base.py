@@ -139,7 +139,7 @@ class BaseDetector(nn.Module):
           self.gen_colormask()
         if isinstance(bbox_result, dict) and len(bbox_result.keys()) == 0:
             return
-        assert(len(imgs) == 1, "only support mini-batch size 1") 
+        assert len(imgs) == 1, "only support mini-batch size 1"
         for img, img_meta in zip(imgs, img_metas):
             h, w, _ = img_meta['img_shape']
             #img_show = img[:h, :w, :]
