@@ -4,7 +4,7 @@
 This repo serves as the official code release of the MaskTrackRCNN model for video instance segmentation described in the tech report:
 ```
 @article{ Yang2019vis,
-  author = {Linjie Yang and Yuchen Fan and Ning Xu},  
+  author = {Linjie Yang and Yuchen Fan and Ning Xu},
   title = {Video instance segmentation},
   journal = {CoRR},
   volume = {abs/1905.04804},
@@ -26,7 +26,7 @@ conda create -n MaskTrackRCNN -y
 conda activate MaskTrackRCNN
 conda install -c pytorch pytorch=0.4.1 torchvision cuda92 -y
 conda install -c conda-forge cudatoolkit-dev=9.2 opencv -y
-conda install cython -y
+conda install cython pillow=7 -y
 pip install git+https://github.com/youtubevos/cocoapi.git#"egg=pycocotools&subdirectory=PythonAPI"
 bash compile.sh
 pip install .
@@ -67,4 +67,3 @@ A json file containing the predicted result will be generated as `OUTPUT_PATH.js
 This project is released under the [Apache 2.0 license](LICENSE).
 ## Contact
 If you have any questions regarding the repo, please contact Linjie Yang (yljatthu@gmail.com) or create an issue.
-
